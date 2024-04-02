@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImageEnhanceAI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet" -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+
+    <style type="text/tailwindcss">
+        @layer utilities {
+        .content-auto {
+            content-visibility: auto;
+        }
+        }
+    </style>
+
+</head>
+<body class="bg-zinc-900 text-slate-500">
+
+    <div id="header"></div>
+
+    <!-- Page Title -->
+    <div class="flex items-center justify-center">
+        <h2 class="text-2xl font-bold mb-2">Contact</h2>
+    </div>
+    <!-- List -->
+    <div class="flex items-center justify-center">
+        <ol>
+            <!-- <li>Telegram:
+                <a href="">Telegram:</a>
+            </li> -->
+            <li> <strong>Email:</strong>
+                <a href="mailto:gemini0x2@gmail.com" class="text-blue-600">gemini0x2@gmail.com</a>
+            </li>
+            <li> <strong>Discord:</strong>
+                <a href="https://discord.gg/vEJbtQEF" class="text-blue-600">gemini0x2</a>
+            </li>
+        </ol>
+    </div>
+
+    <div id="footer"></div>
+    <script>
+        // Add any necessary scripts here
+        $(function(){
+        $("#header").load("components/header.html");
+        $("#footer").load("components/footer.html");
+        });
+    </script>
+</body>
+</html>

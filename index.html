@@ -5,113 +5,136 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ImageEnhanceAI</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet" -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+
+    <style type="text/tailwindcss">
+        @layer utilities {
+        .content-auto {
+            content-visibility: auto;
+        }
+        }
+    </style>
+
 </head>
-<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-    <div class="header">
-        <nav id="navbar" class="navbar navbar-light bg-dark px-3 fixed-top">
-            <a class="navbar-brand text-light" href="#">ImageEnhanceAI</a>
-            <ul class="nav nav-pills">
-                <li><a href="#section1" class="nav-link" id="top-link">Image Upscaler</a></li>
-                <li><a href="#section2" class="nav-link" id="portfolio-link">Image Sharpen</a></li>
-                <li><a href="#section3" class="nav-link" id="about-link">Image Denoise</a></li>
-                <li><a href="#section4" class="nav-link" id="contact-link">Video Enhacer</a></li>
-                <li><a href="#section5" class="nav-link" id="contact-link">Contact</a></li>
+<body class="bg-gray-100">
+
+    <div id="header"></div>
+
+    <!-- Body -->
+    <div class="max-w-6xl mx-auto my-8">
+        <!-- Carousel Slideshow Section -->
+        <section class="my-4">
+            <!-- Add your carousel slideshow here -->
+            <div id="carousel" class="carousel">
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1696610693281-7adc02bb5d3d?auto=format&fit=crop&q=80&w=2670&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Slide 1">
+                </div>
+                <!-- <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1696610693281-7adc02bb5d3d?auto=format&fit=crop&q=80&w=2670&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Slide 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1696610693281-7adc02bb5d3d?auto=format&fit=crop&q=80&w=2670&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Slide 3">
+                </div> -->
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="my-4">
+            <h2 class="text-2xl font-bold mb-2">Freelance Services</h2>
+            <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <!-- List of services -->
+                <li class="bg-white p-4 shadow-md rounded hover:bg-sky-700">
+                    <a href="services/image.html" > <strong>Image Edits and Enhancements</strong> (upscaling, color correction, denoise, sharpen, photoshop edits, etc..)</a>
+                </li>
+                <li class="bg-white p-4 shadow-md rounded hover:bg-sky-700">
+                    <a href="services/video.html" > <strong>Video Edits and Enhancements</strong> (upscaling, color correction, denoise, slowmo)</a>
+                </li>
+                <li class="bg-white p-4 shadow-md rounded hover:bg-sky-700">
+                    <!-- <a href="services/downloading.html" >Need help finding or downloading files/torrents? I gotchu!</a> -->
+                    <a href="services/quote.html" ><strong>Need help finding or downloading files/torrents?</strong></a>
+                </li>
+                <li class="bg-white p-4 shadow-md rounded hover:bg-sky-700">
+                    <!-- <a href="services/program.html" >Need help setting up a script or program in your machine? I gotchu!</a> -->
+                    <a href="services/quote.html" > <strong>Need help setting up a script or program in your machine?</strong></a>
+                </li>
+                <li class="bg-white p-4 shadow-md rounded hover:bg-sky-700">
+                    <!-- <a href="services/scripts.html" >Do you need scripts for bulk/batch processing files or whatever? I got you!</a> -->
+                    <a href="services/quote.html" ><strong>Do you need scripts for bulk/batch processing files or whatever?</strong></a>
+                </li>
+                <li class="bg-white p-4 shadow-md rounded hover:bg-sky-700">
+                    <!-- <a href="services/scraping.html" >Web Crawling or Web Scraping?</a> -->
+                    <a href="services/quote.html" ><strong>Web Crawling or Web Scraping? Bulk downloading?</strong></a>
+                </li>
+                <li class="bg-white p-4 shadow-md rounded hover:bg-sky-700">
+                    <!-- <a href="services/server.html" >Need help setting up a server?</a> -->
+                    <a href="services/quote.html" ><strong>Need help setting any kind of server?</strong></a>
+                </li>
+                <li class="bg-white p-4 shadow-md rounded hover:bg-sky-700">
+                    <a href="/contact.html" ><strong>service not listed? please, feel free to contact me!</strong></a>
+                </li>
+                <!-- Add more services as needed -->
             </ul>
-          </nav>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="my-4">
+            <h2 class="text-2xl font-bold mb-2">My Work and Other</h2>
+            <!-- Add your projects here -->
+            <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <!-- <li class="bg-white p-4 shadow-md rounded hover:bg-sky-700">
+                    <a href="apps/javvy.html" >Javvy - My personal Jav "Plex"</a>
+                </li> -->
+                <!-- <li class="bg-white p-4 shadow-md rounded hover:bg-sky-700">
+                    <a href="https://www.reddit.com/user/gemini0x2/submitted/" target="_blank">Reddit</a>
+                </li>
+                <li class="bg-white p-4 shadow-md rounded hover:bg-sky-700">
+                    <a href="https://www.instagram.com/gemini0x2/" target="_blank">Instagram</a>
+                </li>
+                <li class="bg-white p-4 shadow-md rounded hover:bg-sky-700">
+                    <a href="https://twitter.com/gemini0x2" target="_blank">Twitter "X"</a>
+                </li> -->
+                <li class="bg-white p-4 shadow-md rounded hover:bg-sky-700">
+                    <a href="https://www.ebay.com/usr/aluciadesigns" target="_blank">My eBay Shop</a>
+                </li>
+                <li class="bg-white p-4 shadow-md rounded hover:bg-sky-700">
+                    <a href="https://www.etsy.com/shop/AluciaArtDesigns" target="_blank">My Etsy Shop</a>
+                </li>
+                <li class="bg-white p-4 shadow-md rounded hover:bg-sky-700">
+                    <a href="https://alucia.art/" >My Shop</a>
+                </li>
+                <li class="bg-white p-4 shadow-md rounded hover:bg-sky-700">
+                    <a href="projects/javvy4k.html" >Get Exclusive Access to my Private JAV Collection (Javvy4k.com)</a>
+                </li>
+                <li class="bg-white p-4 shadow-md rounded hover:bg-sky-700">
+                    <a href="https://patreon.com/user?u=104827587" target="_blank">Support my work and get exclusve content!</a>
+                </li>
+            </ul>
+        </section>
     </div>
 
-
-    <section class="container bg-warning my-5" id="section1">
-        <h1 class="text-center">Image Upscaler</h1>
-        <div class="row my-2">
-            <div class="col-6 text-center"><h3>Before</h3></div>
-            <div class="col-6 text-center"><h3>After</h3></div>
-        </div>
-        <div class="row my-2">
-            <div class="col-6"><img class="img-fluid" src="https://assets-global.website-files.com/6005fac27a49a9cd477afb63/600985c0356a4a60a5612110_felix-inden-img.jpg" alt=""></div>
-            <div class="col-6"><img class="img-fluid" src="https://assets-global.website-files.com/6005fac27a49a9cd477afb63/600985c0356a4a60a5612110_felix-inden-img.jpg" alt=""></div>
-        </div>
-        <div class="row my-2">
-            <div class="col-6"><img class="img-fluid" src="https://assets-global.website-files.com/6005fac27a49a9cd477afb63/600985c0356a4a60a5612110_felix-inden-img.jpg" alt=""></div>
-            <div class="col-6"><img class="img-fluid" src="https://assets-global.website-files.com/6005fac27a49a9cd477afb63/600985c0356a4a60a5612110_felix-inden-img.jpg" alt=""></div>
-        </div>
-        <div class="row my-2">
-            <div class="col-6"><img class="img-fluid" src="https://assets-global.website-files.com/6005fac27a49a9cd477afb63/600985c0356a4a60a5612110_felix-inden-img.jpg" alt=""></div>
-            <div class="col-6"><img class="img-fluid" src="https://assets-global.website-files.com/6005fac27a49a9cd477afb63/600985c0356a4a60a5612110_felix-inden-img.jpg" alt=""></div>
-        </div>
-    </section>
-
-    <section class="container bg-info" id="section2">
-        <h1 class="text-center">Image Sharpen</h1>
-        <div class="row my-2">
-            <div class="col-6 text-center"><h3>Before</h3></div>
-            <div class="col-6 text-center"><h3>After</h3></div>
-        </div>
-        <div class="row my-2">
-            <div class="col-6"><img class="img-fluid" src="https://assets-global.website-files.com/6005fac27a49a9cd477afb63/600985c0356a4a60a5612110_felix-inden-img.jpg" alt=""></div>
-            <div class="col-6"><img class="img-fluid" src="https://assets-global.website-files.com/6005fac27a49a9cd477afb63/600985c0356a4a60a5612110_felix-inden-img.jpg" alt=""></div>
-        </div>
-        <div class="row my-2">
-            <div class="col-6"><img class="img-fluid" src="https://assets-global.website-files.com/6005fac27a49a9cd477afb63/600985c0356a4a60a5612110_felix-inden-img.jpg" alt=""></div>
-            <div class="col-6"><img class="img-fluid" src="https://assets-global.website-files.com/6005fac27a49a9cd477afb63/600985c0356a4a60a5612110_felix-inden-img.jpg" alt=""></div>
-        </div>
-        <div class="row my-2">
-            <div class="col-6"><img class="img-fluid" src="https://assets-global.website-files.com/6005fac27a49a9cd477afb63/600985c0356a4a60a5612110_felix-inden-img.jpg" alt=""></div>
-            <div class="col-6"><img class="img-fluid" src="https://assets-global.website-files.com/6005fac27a49a9cd477afb63/600985c0356a4a60a5612110_felix-inden-img.jpg" alt=""></div>
-        </div>
-    </section>
-
-    <section class="container bg-success" id="section3">
-        <h1 class="text-center">Image Denoise</h1>
-        <div class="row my-2">
-            <div class="col-6 text-center"><h3>Before</h3></div>
-            <div class="col-6 text-center"><h3>After</h3></div>
-        </div>
-        <div class="row my-2">
-            <div class="col-6"><img class="img-fluid" src="https://assets-global.website-files.com/6005fac27a49a9cd477afb63/600985c0356a4a60a5612110_felix-inden-img.jpg" alt=""></div>
-            <div class="col-6"><img class="img-fluid" src="https://assets-global.website-files.com/6005fac27a49a9cd477afb63/600985c0356a4a60a5612110_felix-inden-img.jpg" alt=""></div>
-        </div>
-        <div class="row my-2">
-            <div class="col-6"><img class="img-fluid" src="https://assets-global.website-files.com/6005fac27a49a9cd477afb63/600985c0356a4a60a5612110_felix-inden-img.jpg" alt=""></div>
-            <div class="col-6"><img class="img-fluid" src="https://assets-global.website-files.com/6005fac27a49a9cd477afb63/600985c0356a4a60a5612110_felix-inden-img.jpg" alt=""></div>
-        </div>
-        <div class="row my-2">
-            <div class="col-6"><img class="img-fluid" src="https://assets-global.website-files.com/6005fac27a49a9cd477afb63/600985c0356a4a60a5612110_felix-inden-img.jpg" alt=""></div>
-            <div class="col-6"><img class="img-fluid" src="https://assets-global.website-files.com/6005fac27a49a9cd477afb63/600985c0356a4a60a5612110_felix-inden-img.jpg" alt=""></div>
-        </div>
-    </section>
-
-    <section class="container bg-primary" id="section4">
-        <h1 class="text-center">Video Upscaler</h1>
-        <div class="row my-2">
-            <div class="col-6 text-center"><h3>Before</h3></div>
-            <div class="col-6 text-center"><h3>After</h3></div>
-        </div>
-        <div class="row my-2">
-            <div class="col-6"><img class="img-fluid" src="https://assets-global.website-files.com/6005fac27a49a9cd477afb63/600985c0356a4a60a5612110_felix-inden-img.jpg" alt=""></div>
-            <div class="col-6"><img class="img-fluid" src="https://assets-global.website-files.com/6005fac27a49a9cd477afb63/600985c0356a4a60a5612110_felix-inden-img.jpg" alt=""></div>
-        </div>
-        <div class="row my-2">
-            <div class="col-6"><img class="img-fluid" src="https://assets-global.website-files.com/6005fac27a49a9cd477afb63/600985c0356a4a60a5612110_felix-inden-img.jpg" alt=""></div>
-            <div class="col-6"><img class="img-fluid" src="https://assets-global.website-files.com/6005fac27a49a9cd477afb63/600985c0356a4a60a5612110_felix-inden-img.jpg" alt=""></div>
-        </div>
-        <div class="row my-2">
-            <div class="col-6"><img class="img-fluid" src="https://assets-global.website-files.com/6005fac27a49a9cd477afb63/600985c0356a4a60a5612110_felix-inden-img.jpg" alt=""></div>
-            <div class="col-6"><img class="img-fluid" src="https://assets-global.website-files.com/6005fac27a49a9cd477afb63/600985c0356a4a60a5612110_felix-inden-img.jpg" alt=""></div>
-        </div>
-    </section>
-
-    <section class="container" id="section5">
-        <h1 class="text-center">Contact</h1>
-        <h2>20 images for $5.00</h2>
-    </section>
-
-    <div class="footer">
-
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
+    <div id="footer"></div>
+    <script>
+        // Add any necessary scripts here
+        $(function(){
+        $("#header").load("components/header.html"); 
+        $("#footer").load("components/footer.html"); 
+        });
+    </script>
 </body>
 </html>
