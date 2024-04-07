@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../public/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../public/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../public/favicon-16x16.png">
+    <link rel="manifest" href="public/site.webmanifest">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet" -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+
+    <style type="text/tailwindcss">
+        @layer utilities {
+        .content-auto {
+            content-visibility: auto;
+        }
+        }
+    </style>
+
+</head>
+
+<body class="bg-gray-100">
+    <div id="header"></div>
+
+    <!-- Header -->
+    <!-- <header class="w-full bg-slate-900 text-white p-4">
+        <h1 class="text-3xl text-center font-bold">Kitano Mina</h1>
+    </header> -->
+
+    <div class="container mx-auto py-8">
+        <div class="max-w-3xl mx-auto">
+            <!-- Title -->
+            <h1 class="text-3xl font-bold mb-4">Kitano Mina</h1>
+
+            <!-- Date -->
+            <p class="text-gray-600 mb-4">April 7, 2024</p>
+
+            <!-- Main Post Image -->
+            <img src="https://alucia.art/img/items/kitano-mina-v1-1.jpg" alt="Main Post Image" class="w-full mb-4">
+
+            <!-- Description -->
+            <p class="text-lg text-gray-800 leading-relaxed">
+                Beautiful Kitano Mina Photobook!
+                Size A5 High Qality Photobooks
+            </p>
+            <!-- <div class="flex flex-row items-center">
+                <img src="https://gemini0x2.arcscolle2373.workers.dev/1:/gemini0x2/public/blog/kitano-mina-v1-1.jpg" alt="kitano-mina">
+                <img src="https://gemini0x2.arcscolle2373.workers.dev/1:/gemini0x2/public/blog/kitano-mina-v1-2.jpg" alt="kitano-mina">
+            </div> -->
+
+            <img src="https://gemini0x2.arcscolle2373.workers.dev/1:/gemini0x2/public/blog/kitano-mina-v1-2.jpg" alt="kitano-mina">
+            <p class="text-lg text-gray-800 leading-relaxed">
+                Available in my shop! 
+                <a href="alucia.art">Alucia.art</a>
+            </p>
+        
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <div id="footer"></div>
+    <script>
+        // Add any necessary scripts here
+        $(function(){
+        $("#header").load("../components/header.html"); 
+        $("#footer").load("../components/footer.html"); 
+        });
+    </script>
+
+</body>
+
+</html>
