@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini0x2</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="public/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="public/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="public/favicon-16x16.png">
+    <link rel="manifest" href="public/site.webmanifest">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet" -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T6BGBVWP');</script>
+    <!-- End Google Tag Manager -->
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+
+    <style type="text/tailwindcss">
+        @layer utilities {
+        .content-auto {
+            content-visibility: auto;
+        }
+        }
+    </style>
+
+</head>
+<body class="bg-gray-100">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T6BGBVWP"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+    <div id="header"></div>
+
+    <div class="w-full h-96 bg-[url('public/bg1.jpg')] bg-cover bg-center flex justify-center items-center">
+        <div class="flex flex-col justify-center items-center">
+            <h1 class=" text-center text-5xl text-white font-bold drop-shadow-lg">Welcome to my homepage!
+                <br>
+                <span class="text-violet-400">Gemini0x2</span>
+            </h1>
+            <p class="mt-5 text-center text-lg text-white opacity-70">Explore my work and the services I offer!</p>
+            <!-- <a class="mt-8 px-12 py-3 bg-gradient-to-r from-amber-500 to-red-600 hover:from-amber-600 hover:to-red-700 text-xl text-white/70 font-semibold drop-shadow-lg rounded-full" href="#">Get Started</a> -->
+        </div>
+    </div>
+
+
+
+    <!-- Body -->
+    <div class="max-w-6xl mx-auto my-8">
+        <!-- Services Section -->
+        <section class="my-4">
+            <h2 class="text-2xl font-bold mb-2">Freelance Services</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <!-- List of services -->
+                <a href="services/image.html" class="bg-white p-4 shadow-md rounded hover:bg-sky-700">
+                    <strong>Image Edits and Enhancements</strong> (upscaling, color correction, denoise, sharpen, photoshop edits, etc..)
+                </a>
+                <a href="services/video.html" class="bg-white p-4 shadow-md rounded hover:bg-sky-700">
+                    <strong>Video Edits and Enhancements</strong> (upscaling, color correction, denoise, slowmo)
+                </a>
+                <!-- <a href="services/downloading.html" >Need help finding or downloading files/torrents? I gotchu!</a> -->
+                <a href="services/quote.html" class="bg-white p-4 shadow-md rounded hover:bg-sky-700">
+                    <strong>Need help finding or downloading files/torrents?</strong>
+                </a>
+                <!-- <a href="services/program.html" >Need help setting up a script or program in your machine? I gotchu!</a> -->
+                <a href="services/quote.html" class="bg-white p-4 shadow-md rounded hover:bg-sky-700">
+                    <strong>Need help setting up a script or program in your machine?</strong>
+                </a>
+                <!-- <a href="services/scripts.html" >Do you need scripts for bulk/batch processing files or whatever? I got you!</a> -->
+                <a href="services/quote.html" class="bg-white p-4 shadow-md rounded hover:bg-sky-700">
+                    <strong>Do you need scripts for bulk/batch processing files or whatever?</strong>
+                </a>
+                <!-- <a href="services/scraping.html" >Web Crawling or Web Scraping?</a> -->
+                <a href="services/quote.html" class="bg-white p-4 shadow-md rounded hover:bg-sky-700">
+                    <strong>Web Crawling or Web Scraping? Bulk downloading?</strong>
+                </a>
+                <!-- <a href="services/server.html" >Need help setting up a server?</a> -->
+                <a href="services/quote.html" class="bg-white p-4 shadow-md rounded hover:bg-sky-700">
+                    <strong>Need help setting any kind of server?</strong>
+                </a>
+                <a href="/contact.html" class="bg-white p-4 shadow-md rounded hover:bg-sky-700">
+                    <strong>service not listed? please, feel free to contact me!</strong>
+                </a>
+                <!-- Add more services as needed -->
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="my-4">
+            <h2 class="text-2xl font-bold mb-2">My Work and Other Links</h2>
+            <!-- Add your projects here -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <!-- <a href="apps/javvy.html" class="bg-white p-4 shadow-md rounded hover:bg-sky-700">
+                    <strong>JAVGem</strong> - My personal Jav "Plex"
+                </a> -->
+                <a href="https://alucia.art/" target="_blank" class="bg-white p-4 shadow-md rounded hover:bg-sky-700">
+                    <strong>Alucia</strong> - My Shop
+                </a>
+                <a href="https://www.reddit.com/user/gemini0x2/submitted/" target="_blank" class="bg-white p-4 shadow-md rounded hover:bg-sky-700">
+                    <strong>Reddit</strong>
+                </a>
+                <a href="https://www.instagram.com/gemini0x2/" target="_blank" class="bg-white p-4 shadow-md rounded hover:bg-sky-700">
+                    <strong>Instagram</strong>
+                </a>
+                <a href="https://twitter.com/gemini0x2" target="_blank" class="bg-white p-4 shadow-md rounded hover:bg-sky-700">
+                    <strong>Twitter</strong> - X.com
+                </a>
+                <a href="projects/javvy4k.html" class="bg-amber-500 p-4 shadow-md rounded hover:bg-yellow-600">
+                    <strong>4K JAV</strong> - Get Exclusive Access to my Private JAV Collection
+                </a>
+                <a href="https://patreon.com/user?u=104827587" target="_blank" class="bg-white p-4 shadow-md rounded hover:bg-sky-700">
+                    <strong>Patreon</strong> - Support my work and get exclusve content!
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <div id="footer"></div>
+    <script>
+        // Add any necessary scripts here
+        $(function(){
+        $("#header").load("components/header.html"); 
+        $("#footer").load("components/footer.html"); 
+        });
+    </script>
+</body>
+</html>
