@@ -46,8 +46,8 @@ function load_items(filepath) {
                     htmlOutput += `<div class="slider">`
                     files.forEach(file => {
                         htmlOutput += ` <div>`
-                        htmlOutput += `     <a href="https://gemini0x2.arcscolle2373.workers.dev/2:/selling/${type}/${file}" data-lity>`
-                        htmlOutput += `         <img src="https://gemini0x2.arcscolle2373.workers.dev/2:/selling/${type}/${file}" class="object-contain object-center h-48 w-96">`;
+                        htmlOutput += `     <a href="https://javvy4k-mdv5o.arcscolle2373.workers.dev/0:/selling/${type}/${file}" data-lity>`
+                        htmlOutput += `         <img src="https://javvy4k-mdv5o.arcscolle2373.workers.dev/0:/selling/${type}/${file}" class="object-contain object-center h-48 w-96">`;
                         htmlOutput += `     </a>`
                         htmlOutput += ` </div>`
                     });
