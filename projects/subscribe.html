@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="public/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="public/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="public/favicon-16x16.png">
+    <link rel="manifest" href="public/site.webmanifest">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet" -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3B99QT2JVM"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-3B99QT2JVM');
+    </script>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+
+    <style type="text/tailwindcss">
+        @layer utilities {
+        .content-auto {
+            content-visibility: auto;
+        }
+        }
+    </style>
+
+</head>
+<body class="bg-zinc-900 text-slate-500">
+
+    <div id="header"></div>
+
+    <!-- Page Title -->
+    <div class="flex items-center justify-center">
+        <!-- <h2 class="text-2xl font-bold mb-2">Subscribe</h2> -->
+    </div>
+
+    <div class="container mx-auto px-4 py-8">
+        <!-- Subscription Options Section -->
+        <h2 class="text-3xl font-bold text-center mb-6 text-white">Subscribe</h2>
+        <p class="text-center text-lg text-gray-400 mb-8">
+          Get Access!
+        </p>
+        
+        <div class="grid gap-8 md:grid-cols-2">
+          <!-- Standard Supporter -->
+          <div class="border rounded-lg shadow-md p-6 hover:shadow-lg transition">
+            <!-- <img src="/public/sakura.png" alt="Standard Supporter" class="w-16 h-16 object-contain mx-auto mb-4"> -->
+            <!-- <img src="/public/s1.jpg" alt="Premium Supporter" class="w-full h-80 object-cover rounded-md mb-4"> -->
+            <!-- <img src="/public/s2.jpg" alt="Premium Supporter" class="w-full h-80 object-cover rounded-md mb-4"> -->
+            <!-- <img src="/public/s3.jpg" alt="Premium Supporter" class="w-full h-80 object-cover rounded-md mb-4"> -->
+            <!-- <img src="/public/s4.jpg" alt="Premium Supporter" class="w-full h-80 object-cover rounded-md mb-4"> -->
+            <!-- <img src="/public/s5.jpg" alt="Premium Supporter" class="w-full h-80 object-cover rounded-md mb-4"> -->
+            <img src="/public/s6.jpg" alt="Premium Supporter" class="w-full h-80 object-cover rounded-md mb-4">
+            <!-- <img src="/public/s7.jpg" alt="Premium Supporter" class="w-full h-80 object-cover rounded-md mb-4"> -->
+            <!-- <img src="/public/s8.jpg" alt="Premium Supporter" class="w-full h-80 object-cover rounded-md mb-4"> -->
+            <!-- <img src="/public/s9.png" alt="Premium Supporter" class="w-full h-80 object-cover rounded-md mb-4"> -->
+
+            <!-- class="w-full h-40 object-cover rounded-md mb-4"-->
+
+            <h3 class="text-xl font-semibold mb-2 text-fuchsia-400">Standard Supporter</h3>
+            <h3 class="text-md font-semibold mb-2 text-blue-400">$8.99 USD / Month</h3>
+            <ol class="text-gray-200 mb-4 list-disc">
+                <li>Gain exclusive access to my entire collection of existing and future 4K titles.</li>
+            </ol>
+            <a href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-7LC362331F057702DM5NER4Y" target="_blank">
+              <button class="bg-fuchsia-600 text-white font-medium py-2 px-4 rounded hover:bg-fuchsia-700 transition">Subscribe Now</button>
+            </a>
+          </div>
+      
+          <!-- Premium Supporter -->
+          <div class="border rounded-lg shadow-md p-6 hover:shadow-lg transition">
+            <!-- <img src="/public/peach.png" alt="Premium Supporter" class="w-16 h-16 object-contain mx-auto mb-4"> -->
+             <!-- <div class="max-w-xl mx-auto bg-white shadow-md rounded-lg overflow-hidden mt-8"> -->
+              <img src="/public/s10.jpg" alt="Premium Supporter" class="w-full h-80 object-cover rounded-md mb-4">
+             <!-- </div> -->
+
+            <h3 class="text-xl font-semibold mb-2 text-amber-400">Premium Supporter</h3>
+            <h3 class="text-md font-semibold mb-2 text-blue-400">$12 USD / Month</h3>
+            <ol class="text-gray-200 mb-4 list-disc">
+                <li>Gain exclusive access to my entire collection of existing and future 4K titles.</li>
+                <li>Can make 5 movie requests per week!</li>
+                <li>Help keep the project alive!</li>
+            </ol>
+            <a href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-4KW22183FG583414VMW6FE6A" target="_blank">
+              <button class="bg-amber-600 text-white font-medium py-2 px-4 rounded hover:bg-amber-700 transition">Subscribe Now</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mx-auto px-4 py-8 border border-orange-800 border-2">
+        <span class="text-md font-semibold text-orange-400">NOTE!!! </span>
+        <span class="text-white">After you subscribe I will send to your email all the info needed to access my content! Also, due to my schedule I might not be available to send you the info immediately, expect a reply within 12 hours </span>
+      </div>
+
+      <div class="container mx-auto px-4 py-8">
+        <span class="text-md font-semibold text-gray-200">Regarding movie request for <span class="text-amber-400">Premium Supporters</span>:</span>
+        <ol class="text-gray-400 list-disc">
+            <li>There is no guarantee that the requested title will be available in 4K, in this case the 1080p version will be provided.</li>
+            <li>Movie requests will be handled based on my availability and schedule. Please understand that I may not always be able to fulfill requests immediately.</li>
+        </ol>
+      </div>
+    <!-- List -->
+    <div class="flex items-center justify-center my-5">
+      <p>For questions email: <span class="text-blue-600"> gemini0x2@gmail.com</span></p>
+
+    </div>
+
+    <div id="footer"></div>
+    <script>
+        // Add any necessary scripts here
+        $(function(){
+        $("#header").load("../components/header.html");
+        $("#footer").load("../components/footer.html");
+        });
+    </script>
+</body>
+</html>
